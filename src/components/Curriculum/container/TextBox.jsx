@@ -2,11 +2,14 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import CustomHeading from "../../CustomHeading";
 
-const TextBox = () => {
+const TextBox = ({ heading, text }) => {
+  const lastword = heading.split(" ");
+  heading = lastword.filter((item, i) => i !== lastword.length - 1);
   return (
     <Box mt={"200px"} mb={"230px"}>
       <Heading fontSize={"2xl"}>
-        100% Live <CustomHeading underline={false} text={"Distance"} /> Learning
+        {heading.join(" ")}{" "}
+        <CustomHeading underline={false} text={lastword[lastword.length - 1]} />
       </Heading>
       <Text
         fontFamily={"Open Sans, sans-serif"}
@@ -14,9 +17,7 @@ const TextBox = () => {
         fontWeight={400}
         mt={"30px"}
       >
-        India’s Only Live Tech-Learning Course With Tier 1 Instructors. Get
-        Real-Time Feedback, Interactive Sessions & A Personalised Learning
-        Experience.
+        {text}
       </Text>
     </Box>
   );

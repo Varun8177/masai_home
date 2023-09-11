@@ -16,8 +16,11 @@
     /* Chrome, Safari, and Opera */
   }
 
-  .slider {
-    position: 'relative';
-    --v-offset: 60px;
-    --curve-height: 80px
+
+  .slick-slide>div {
+    margin: 0 10px;
+  }
+
+  .slick-list {
+    margin: 0 -10px;
   }

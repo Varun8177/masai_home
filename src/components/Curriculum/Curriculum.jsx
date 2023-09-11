@@ -4,7 +4,7 @@ import CustomHeading from "../CustomHeading";
 import Container from "./Container";
 const Curriculum = () => {
   return (
-    <Box w={"80%"} m={"auto"} pos={"relative"}>
+    <Box w={"80%"} m={"auto"} pos={"relative"} py={"10px"}>
       <Heading textAlign={"center"} fontSize={"35"} mb={"20px"}>
         Best-In-Class <CustomHeading underline={true} text={"Curriculum"} /> &{" "}
         <CustomHeading underline={true} text={"Pedagogy"} />
