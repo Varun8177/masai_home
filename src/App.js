@@ -4,6 +4,7 @@ import UserShowCast from "./components/Body/UserShowCast";
 import Community from "./components/Community/Community";
 import Courses from "./components/Courses";
 import Curriculum from "./components/Curriculum/Curriculum";
+import News from "./components/news/News";
 
 import Footer from "./components/Footer";
 import Impact from "./components/Impact";
@@ -23,12 +24,13 @@ function App() {
       <Courses />
       <Curriculum />
       <Community />
+      <News/>
+    </div>
       <Partners />
       <Impact />
       <Possibilities />
       <Footer />
     </div>    
-    
   );
 }
 
