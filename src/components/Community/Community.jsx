@@ -28,7 +28,7 @@ const Community = () => {
     "https://www.masaischool.com/images/new-homepage/community/community12.webp",
   ];
   return (
-    <Box w={"100%"} bgColor={"#f9f9f9"}>
+    <Box w={"100%"} bgColor={"#f9f9f9"} pos={"relative"}>
       <Box minH={"50vh"} my={"20px"} py={"10px"} w={"96%"} m={"auto"}>
         <Heading textAlign={"center"} fontSize={"35"} mt={"20px"}>
           Be A Part Of Our Thriving{" "}
