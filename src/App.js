@@ -16,20 +16,19 @@ import Possibilities from "./components/Possibilities";
 
 function App() {
   return (
-
     <div className="App">
-           <Navbar/>
-       <Banner/>
-       <UserShowCast/>
+      <Navbar />
+      <Banner />
+      <UserShowCast />
       <Courses />
       <Curriculum />
       <Community />
       <Partners />
       <Impact />
       <Possibilities />
-      <News/>
+      <News />
       <Footer />
-    </div>    
+    </div>
   );
 }
 
