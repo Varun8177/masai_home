@@ -24,11 +24,10 @@ function App() {
       <Courses />
       <Curriculum />
       <Community />
-      <News/>
-    </div>
       <Partners />
       <Impact />
       <Possibilities />
+      <News/>
       <Footer />
     </div>    
   );
