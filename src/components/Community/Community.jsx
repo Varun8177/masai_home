@@ -1,45 +1,69 @@
 import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import CustomHeading from "../CustomHeading";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Community = () => {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 3,
+  };
+
+  const Photos = [
+    "https://www.masaischool.com/images/new-homepage/community/community5.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community1.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community2.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community3.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community4.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community6.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community7.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community8.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community9.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community10.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community11.webp",
+    "https://www.masaischool.com/images/new-homepage/community/community12.webp",
+  ];
   return (
-    <Box minH={"50vh"} mt={"20px"} bgColor={"#f9f9f9"} pt={"10px"}>
-      <Heading textAlign={"center"} fontSize={"35"} mt={"20px"}>
-        Be A Part Of Our Thriving{" "}
-      </Heading>
-      <Heading textAlign={"center"} fontSize={"35"} mb={"40px"}>
-        <CustomHeading underline={true} text={"Tech Community"} />
-      </Heading>
-      <Flex
-        className="scroll-container slider"
-        overflow={"auto"}
-        gap={"10px"}
-        mb={"40px"}
-      >
-        {new Array(10).fill(0).map((item, i) => (
-          <Image
-            key={i}
-            src="https://www.masaischool.com/images/new-homepage/community/community8.webp"
-            alt="community img"
-            w={"350px"}
-          />
-        ))}
-      </Flex>
-      <Button
-        textAlign="center"
-        margin="auto"
-        display="block"
-        bgColor={"#ed0331"}
-        color={"white"}
-        _hover={{ bgColor: "#cc032a" }}
-        fontWeight={400}
-        px={"10"}
-        h={"50px"}
-        fontSize={"xl"}
-      >
-        JOIN OUR COMMUNITY
-      </Button>
+    <Box w={"100%"} bgColor={"#f9f9f9"}>
+      <Box minH={"50vh"} my={"20px"} py={"10px"} w={"96%"} m={"auto"}>
+        <Heading textAlign={"center"} fontSize={"35"} mt={"20px"}>
+          Be A Part Of Our Thriving{" "}
+        </Heading>
+        <Heading textAlign={"center"} fontSize={"35"} mb={"40px"}>
+          <CustomHeading underline={true} text={"Tech Community"} />
+        </Heading>
+        <Slider {...settings}>
+          {Photos.map((item, i) => (
+            <Image
+              key={i}
+              src={item}
+              alt="community img"
+              w={"350px"}
+              h={"250px"}
+              objectFit={"contain"}
+            />
+          ))}
+        </Slider>
+
+        <Button
+          textAlign="center"
+          margin="auto"
+          display="block"
+          bgColor={"#ed0331"}
+          color={"white"}
+          _hover={{ bgColor: "#cc032a" }}
+          fontWeight={400}
+          px={"10"}
+          h={"50px"}
+          fontSize={"xl"}
+        >
+          JOIN OUR COMMUNITY
+        </Button>
+      </Box>
     </Box>
   );
 };
