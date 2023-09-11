@@ -92,12 +92,17 @@ const Courses = () => {
               <li>Pay After Placement</li>
             </ul>
             <Button
-              style={{
-                marginTop: "20px",
-                backgroundColor: "#ed0331",
-                color: "white",
-                width: "100%",
-              }}
+              textAlign="center"
+              margin="auto"
+              bgColor={"#ed0331"}
+              color={"white"}
+              _hover={{ bgColor: "#cc032a" }}
+              fontWeight={400}
+              px={"10"}
+              h={"50px"}
+              fontSize={"lg"}
+              mt={"20px"}
+              w={"100%"}
             >
               VIEW DETAILS
             </Button>
@@ -162,12 +167,17 @@ const Courses = () => {
               <li>Pay After Placement</li>
             </ul>
             <Button
-              style={{
-                marginTop: "20px",
-                backgroundColor: "#ed0331",
-                color: "white",
-                width: "100%",
-              }}
+              textAlign="center"
+              margin="auto"
+              bgColor={"#ed0331"}
+              color={"white"}
+              _hover={{ bgColor: "#cc032a" }}
+              fontWeight={400}
+              px={"10"}
+              h={"50px"}
+              fontSize={"lg"}
+              mt={"20px"}
+              w={"100%"}
             >
               VIEW DETAILS
             </Button>
@@ -175,12 +185,16 @@ const Courses = () => {
         </div>
       </div>
       <Button
-        style={{
-          marginTop: "20px",
-          backgroundColor: "#ed0331",
-          color: "white",
-          width: "20%",
-        }}
+        textAlign="center"
+        margin="auto"
+        bgColor={"#ed0331"}
+        color={"white"}
+        _hover={{ bgColor: "#cc032a" }}
+        fontWeight={400}
+        px={"10"}
+        h={"50px"}
+        fontSize={"lg"}
+        mt={"20px"}
       >
         VIEW DETAILS
       </Button>

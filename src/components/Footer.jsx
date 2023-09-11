@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Text } from "@chakra-ui/react";
 import React from "react";
 import { BiLogoTwitter } from "react-icons/bi";
 import { BsFacebook } from "react-icons/bs";
@@ -9,7 +9,9 @@ import { AiFillYoutube } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "black" }}>
+    <footer
+      style={{ backgroundColor: "black", fontFamily: "Open Sans, sans-serif" }}
+    >
       <div
         style={{
           display: "flex",
@@ -20,8 +22,8 @@ const Footer = () => {
         }}
       >
         <div style={{ color: "white", fontWeight: "600" }}>
-          <h2 style={{ fontSize: "28px" }}>Get Started</h2>
-          <p style={{ fontSize: "24px" }}>Join the Program</p>
+          <h2 style={{ fontSize: "20px" }}>Get Started</h2>
+          <p style={{ fontSize: "15px", color: "#ffdb66" }}>Join the Program</p>
         </div>
         <div>
           <Button
@@ -59,7 +61,7 @@ const Footer = () => {
             alignItems: "center",
           }}
         >
-          <p>Follow us -</p>
+          <Text fontFamily={"Open Sans, sans-serif"}>Follow us -</Text>
           <BiLogoTwitter />
           <BsFacebook />
           <AiFillLinkedin />
@@ -85,6 +87,8 @@ const Footer = () => {
             color: "black",
             borderRadius: "100px",
           }}
+          fontFamily={"Open Sans, sans-serif"}
+          bgColor={"#f3f4f6"}
         >
           Full Stack Web Development - Full Time
         </Button>
@@ -95,6 +99,8 @@ const Footer = () => {
             color: "black",
             borderRadius: "100px",
           }}
+          fontFamily={"Open Sans, sans-serif"}
+          bgColor={"#f3f4f6"}
         >
           Data Analytics - Full Time
         </Button>
@@ -105,6 +111,8 @@ const Footer = () => {
             color: "black",
             borderRadius: "100px",
           }}
+          fontFamily={"Open Sans, sans-serif"}
+          bgColor={"#f3f4f6"}
         >
           Mobile Development - Full Time
         </Button>
@@ -115,6 +123,8 @@ const Footer = () => {
             color: "black",
             borderRadius: "100px",
           }}
+          fontFamily={"Open Sans, sans-serif"}
+          bgColor={"#f3f4f6"}
         >
           Software Testing & Automation - Full Time
         </Button>
@@ -125,6 +135,8 @@ const Footer = () => {
             color: "black",
             borderRadius: "100px",
           }}
+          fontFamily={"Open Sans, sans-serif"}
+          bgColor={"#f3f4f6"}
         >
           Backend Development - Full Time
         </Button>
