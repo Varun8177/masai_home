@@ -11,6 +11,35 @@ const Community = () => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          infinite: true,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          infinite: true,
+          speed: 500,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 3,
+        },
+      },
+    ],
   };
 
   const Photos = [
@@ -29,7 +58,13 @@ const Community = () => {
   ];
   return (
     <Box w={"100%"} bgColor={"#f9f9f9"} pos={"relative"}>
-      <Box minH={"50vh"} my={"20px"} py={"10px"} w={"96%"} m={"auto"}>
+      <Box
+        minH={"50vh"}
+        my={"20px"}
+        py={"10px"}
+        w={{ base: "90%", lg: "96%" }}
+        m={"auto"}
+      >
         <Heading textAlign={"center"} fontSize={"35"} mt={"20px"}>
           Be A Part Of Our Thriving{" "}
         </Heading>

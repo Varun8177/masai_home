@@ -15,6 +15,47 @@ const Partners = () => {
     speed: 2000,
     autoplaySpeed: 1000,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: false,
+          infinite: true,
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          speed: 2000,
+          autoplaySpeed: 1000,
+          cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          dots: false,
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          speed: 2000,
+          autoplaySpeed: 1000,
+          cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots: false,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          speed: 2000,
+          autoplaySpeed: 1000,
+          cssEase: "linear",
+        },
+      },
+    ],
   };
   const partnerData = [
     "https://masai-website-images.s3.ap-south-1.amazonaws.com/moneytap_d5a6c9d532.svg",
@@ -42,7 +83,7 @@ const Partners = () => {
     "",
   ];
   return (
-    <Box py={"20px"} w={"95%"} m={"auto"} my={"20px"}>
+    <Box py={"20px"} w={{ base: "90%", lg: "95%" }} m={"auto"} my={"20px"}>
       <Heading textAlign={"center"} fontSize={"35"} minH={"20vh"}>
         Meet Our <CustomHeading underline={true} text={"4000+"} /> Hiring
         Partners
