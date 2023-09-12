@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 import Partners from "./components/Partners/Partners";
 import Possibilities from "./components/Possibilities";
+import OutcomePage from "./components/Body/OutcomePage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Banner />
       <UserShowCast />
+      <OutcomePage />
       <Courses />
       <Curriculum />
       <Community />

@@ -80,7 +80,6 @@ const Partners = () => {
     "https://masai-website-images.s3.ap-south-1.amazonaws.com/ajio_a16cd7a85b.svg",
     "https://masai-website-images.s3.ap-south-1.amazonaws.com/globallogic_c30eb641f7.svg",
     "https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_9dc276a187.svg",
-    "",
   ];
   return (
     <Box py={"20px"} w={{ base: "90%", lg: "95%" }} m={"auto"} my={"20px"}>
