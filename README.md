@@ -5,7 +5,7 @@ As India's fastest growing career institute, Masai has one goal: unlocking the h
  - [@Varun Ergurala](https://github.com/Varun8177)
  - [@Rajesh Panchika](https://github.com/Rajesh-P-07)
  - [@Vishal Girhepunje](https://github.com/vishal-girhepunje)
- - [@Rishikuma Nayak](https://github.com/rishunayak)
+ - [@Rishikumar Nayak](https://github.com/rishunayak)
  
 
 
@@ -15,3 +15,21 @@ As India's fastest growing career institute, Masai has one goal: unlocking the h
 - JavaScript
 - ReactJs
 - ChakraUI
+
+# Features:
+- NavBar
+- Outcomes Section (Conditional Rendering)
+- Meet Our Section (carousel)
+- Footer
+- Resaponsive
+
+# Home Page
+  - Navbar and below that Navigation-bar with different pages.
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss01.png" width="90%"/>
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss02.png" width="90%"/>
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss03.png" width="90%"/>
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss04.png" width="90%"/>
+
+   - Footer
+ 
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss05.png" width="90%"/>
