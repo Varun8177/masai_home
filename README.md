@@ -25,10 +25,8 @@ As India's fastest growing career institute, Masai has one goal: unlocking the h
 
 # Home Page
   - Navbar and below that Navigation-bar with different pages.
-<img src="https://github.com/vishal-girhepunje/KindMeal-Clone/blob/main/ImagesOfSS/navebar.png?raw=true" width="90%"/>
-<img src="https://github.com/vishal-girhepunje/KindMeal-Clone/blob/main/ImagesOfSS/landingpage1.png?raw=true" width="90%"/>
-<img src="https://github.com/vishal-girhepunje/KindMeal-Clone/blob/main/ImagesOfSS/landingpage2.png?raw=true" width="90%"/>
+
 
    - Footer
  
-<img src="https://github.com/vishal-girhepunje/KindMeal-Clone/blob/main/ImagesOfSS/landingpage3.png?raw=true" width="90%"/>
+<img src="" width="90%"/>
