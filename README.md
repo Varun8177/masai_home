@@ -25,8 +25,11 @@ As India's fastest growing career institute, Masai has one goal: unlocking the h
 
 # Home Page
   - Navbar and below that Navigation-bar with different pages.
-
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss01.png" width="90%"/>
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss02.png" width="90%"/>
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss03.png" width="90%"/>
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss04.png" width="90%"/>
 
    - Footer
  
-<img src="" width="90%"/>
+<img src="https://github.com/Varun8177/masai_home/blob/vishal/src/components/ss05.png" width="90%"/>
