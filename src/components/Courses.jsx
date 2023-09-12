@@ -4,7 +4,7 @@ import React from "react";
 const Courses = () => {
   return (
     <div style={{ maxWidth: "80%", margin: "auto", textAlign: "center" }}>
-      <Heading size={["xl","2xl","3xl"]} my={["10px","20px"]}>Our Courses</Heading>
+      <Heading size={["xl","2xl","2xl"]} my={["10px","20px"]}>Our Courses</Heading>
       <Heading size={["md","lg","xl"]}>
         Practice-Based Learning Tracks,{" "}
         <span
