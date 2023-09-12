@@ -1,34 +1,22 @@
-import { Button, Image, border } from "@chakra-ui/react";
+import { AspectRatio, Box, Button, Heading, Image, Text, border } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import ReactPlayer from "react-player";
 
 const urls = [
-  "https://youtu.be/tSlit0vgB20?si=01NLGxSQxC2sx55m",
+  "https://www.youtube.com/embed/tSlit0vgB20?si=ecrHP-61XtdZh5ez",
   "https://youtu.be/n0xIOjbNN0A?si=Oi39BAmilyJk2noc",
   "https://youtu.be/WjklvHqRVbs?si=6w58PoTqqoajQQz5",
 ];
 
 const Impact = () => {
-    const [url,setUrl]=useState(urls[0]);
+  const [url, setUrl] = useState(urls[0]);
 
-    const handleLeft=()=>{
-
-    }
-    const handleRight=()=>{
-
-    }
+  const handleLeft = () => {};
+  const handleRight = () => {};
   return (
-    <div style={{ backgroundColor: "#e5e7eb",paddingBottom:"20px" }}>
-      <h1
-        style={{
-          fontSize: "36px",
-          fontWeight: "700",
-          textAlign: "center",
-          margin: "30px",
-          padding: "30px",
-        }}
-      >
+    <div style={{ backgroundColor: "#e5e7eb", paddingBottom: "20px" }}>
+      <Heading size={["md", "lg", "xl"]} textAlign="center" pt="20px">
         Our Students Are{" "}
         <span
           style={{
@@ -46,18 +34,20 @@ const Impact = () => {
             w={"100%"}
             zIndex={-1}
           />
-        </span>{" "}
-      </h1>
+        </span>
+      </Heading>
       <div
         style={{
           display: "flex",
           width: "90%",
           margin: "40px auto",
           justifyContent: "space-around",
+          flexWrap: "wrap",
+          alignItems: "center",
+          rowGap: "20px",
         }}
       >
-        <div style={{ width: "47%", position: "relative" }}>
-          {/* <Button
+        {/* <Button
             style={{ position: "absolute", top: "12%", left: "-3%" }}
             onClick={handleLeft}
           >
@@ -69,14 +59,27 @@ const Impact = () => {
           >
             {">"}
           </Button> */}
-          <ReactPlayer url={url}/>
-        </div>
-        <div style={{ width: "40%", overflow: "hidden" }}>
+        <AspectRatio
+          w="700px"
+          ratio="4/3"
+          borderRadius="2xl"
+          overflow="hidden"
+          height={["200px", "400px"]}
+        >
+          <iframe
+            src={url}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </AspectRatio>
+        <Box style={{ maxWidth: "400px", overflow: "hidden" }}>
           <div
             style={{
               border: "1px solid #CFD0EE",
               padding: "20px",
-              width: "400px",
+              width: "100%",
               borderRadius: "20px",
               boxShadow: "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
               backgroundColor: "white",
@@ -96,22 +99,25 @@ const Impact = () => {
               in the hunger with which the grads...
             </p>
             <div style={{ display: "flex", marginLeft: "20px", gap: "10px" }}>
-              <img
+              <Image
                 src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Arya_Adarsha_Gautam_a72b51d7b3.jpeg"
                 alt=""
-                style={{ width: "50px", borderRadius: "10px" }}
+                style={{ borderRadius: "10px" }}
+                width={["50px", "50px"]}
+                height={["60px","auto"]}
               />
               <div>
-                <h2 style={{ fontWeight: "600" }}>Arya Adarsha Gautam</h2>
-                <p style={{ fontSize: "16px" }}>
+                <Heading style={{ fontWeight: "600" }} fontSize={["16px","20px"]}>Arya Adarsha Gautam</Heading>
+                <Text fontSize={["10px","16px"]}>
                   CTO and Co-Founder - Pagarbook
-                </p>
+                </Text>
               </div>
             </div>
-            <img
+            <Image
               src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pagarbook_rect_adcdc345e4.svg"
               alt=""
-              style={{ width: "100px", marginLeft: "8px" }}
+              style={{ marginLeft: "8px" }}
+              width={["80px", "100px"]}
             />
           </div>
           {/* <div
@@ -280,7 +286,7 @@ const Impact = () => {
               style={{ width: "100px", marginLeft: "8px" }}
             />
           </div> */}
-        </div>
+        </Box>
       </div>
     </div>
   );
