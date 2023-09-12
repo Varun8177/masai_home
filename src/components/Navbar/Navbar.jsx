@@ -115,7 +115,7 @@ const Navbar = () => {
           </Link>
         </Flex>
 
-        <Flex gap={"20px"}>
+        <Flex gap={"20px"} display={["none","flex"]}>
           <Button color={"rgb(110, 113, 204)"} bg={"#e5feff"}>
             REFER & EARN
           </Button>
