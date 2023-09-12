@@ -6,8 +6,8 @@ function News() {
       <Heading textAlign={"center"} fontSize={"35"} mb={"20px"}>
         Masai In <CustomHeading underline={true} text={"News"} />
       </Heading>
-      <Flex justifyContent={"space-between"}>
-        <Box w={"30%"}>
+      <Flex justifyContent={"space-between"} flexWrap={"wrap"} gap={"10px"}>
+        <Box w={"30%"} minW={"200px"} flexGrow={1}>
           <Image
             src={
               "https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg"
@@ -22,7 +22,7 @@ function News() {
             Empowering Education Through GenAI
           </Heading>
         </Box>
-        <Box w={"30%"}>
+        <Box w={"30%"} minW={"200px"} flexGrow={1}>
           <Image
             src={
               "https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thungy_1_420b226e5b.webp"
@@ -37,7 +37,7 @@ function News() {
             Masai School targets fivefold revenue growth in three years
           </Heading>
         </Box>
-        <Box w={"30%"}>
+        <Box w={"30%"} minW={"200px"} flexGrow={1}>
           <Image
             src={
               "https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thingy_2_f2c52e6fcf.webp"

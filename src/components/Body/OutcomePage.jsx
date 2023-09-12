@@ -1,19 +1,37 @@
-import { Box, Heading } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Heading } from "@chakra-ui/react";
+import React, { useState } from "react";
+import CustomHeading from "../CustomHeading";
+import Sidebar from "../Outcome/Sidebar";
+import Content from "../Outcome/Content";
 
 const OutcomePage = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const handleActiveIndex = (index) => {
+    setActiveIndex(index);
+  };
   return (
     <>
-       <Box maxW="1280px">
-         <Heading>Driven By Outcomes To Launch Your Career In Tech</Heading>
+      <Box>
+        <Heading textAlign={"center"} fontSize={"35"} my={"30px"}>
+          Driven By <CustomHeading underline={true} text={"Outcomes"} /> To
+          Launch Your Career In Tech
+        </Heading>
 
-         <Flex>
-            <Box></Box> 
-            <Box></Box>
-         </Flex>
-       </Box>
+        <Flex
+          w={{ base: "100%", xl: "80%" }}
+          m={"auto"}
+          gap={"10px"}
+          flexDir={{ base: "column", lg: "row" }}
+        >
+          <Sidebar
+            activeIndex={activeIndex}
+            handleActiveIndex={handleActiveIndex}
+          />
+          <Content activeIndex={activeIndex} />
+        </Flex>
+      </Box>
     </>
-  )
-}
+  );
+};
 
-export default OutcomePage
+export default OutcomePage;
